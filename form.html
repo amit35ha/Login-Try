@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35ha Form</title>
+    <style>
+        body{
+            background-image: url("image.png"); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;;
+        }
+        .form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: #03726f;
+            border-radius: 10px;
+            margin-top: 7%;
+            font-size: large;
+        }
+        .hobbies {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .fbutton {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input{
+            margin: 5px 0;
+            padding: 8px;
+            box-sizing: border-box;
+            background-color: rgba(255, 235, 205, 0);
+            border: none;
+            border-radius: 5px;
+        }
+        h1{
+            color: aliceblue;
+        }
+        button:hover {
+                scale: .8;
+            }
+    </style>
+</head>
+<Form>
+<body style="background-color: rgba(0, 255, 255, 0.496);" background-color: #0d1117;>
+    
+        <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="esa.png" alt="Logo" style="width: 3cm;">
+    <h1 style="margin-left: 37%;"><b>ESA Login Form</b></h1>
+</div>
+ 
+        <hr>
+        <nav>
+            <div class="form" id="form">
+                <div id="name" class="name">
+                <Label><b>Full Name :&nbsp;&nbsp</b></Label>
+                <input type="text" name="name" placeholder="Enter Your Name." required></input>
+                </div>
+                <hr>
+                <div id="email" class="email">
+                <label><B>Email :</B></label>
+                <input type="email" placeholder="Enter Your Email" min="0" max="99" style="width: 161px;" required></input>
+                </div>
+                <hr>
+                <label><b>Password :</b></label>
+                <input type="password" placeholder="Enter Your Password" required id="password"></input>         
+                <hr>
+                <LAbel><b>Gender :</b></LAbel>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+                <hr>
+                <Label><b>Hobbies :</b></Label>
+                <div id="hobbies" class="hobbies">                
+                <input type="checkbox">Cooking
+                <input type="checkbox">Travelling
+                <input type="checkbox">Reading
+                <input type="checkbox">Painting
+                <input type="checkbox">Music
+                <input type="checkbox">Photography <br>
+                 </div>
+            </div>
+        </nav>
+        <br>
+        <div id="buttons" class="buttons">
+        <button type="reset" id="reset" class="fbutton"><a href="./login.html" style="text-decoration: none; color: white;">Logout</a></button>
+        <button id="reset" class="fbutton">Submit</button>
+        </div>
+    </header>
+    <!---footer>This is by esa </footer---->
+</body>
+</Form>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            background-color: #132b4800; 
+            color: #ffffff;
+            box-sizing: border-box;
+            padding: 0;
+              
+                    
+        }
+        body {
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+       .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: static;
+            background-image: url("image.png"); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center;; 
+        }
+        input{
+            margin: 5px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgba(255, 235, 205, 0);
+            border: none;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #4f46e5; /* Indigo color */
+            color: #ffffff; /* White text */
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+        button:hover{
+            background-color: #D9A299;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <main class="main" id="main">
+        <div class="login_container" id="login_container" style="background-color: #132b48bc;
+        padding-left: 10px; 
+        padding-bottom: 10px;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 0 25px #271722;">
+<h1>Login </h1>
+<form action="form1.php" method="POST">
+<div id="login">
+    <div id="main-login">
+        <label for="username">User name:</label>
+        <input type="text" name="usrnm" placeholder="Enter your user name" required autofocus>
+        <br><br>
+        <label for="password">Password :</label>
+        <input type="password" name="psswrd" placeholder="****" required>
+    </div><br>
+    <button type="submit" value="SUBMIT" class="btn">SUBMIT</button>
+    <button type="RESET" value="RESET" class="btn">RESET</button>
+ </div>  
+</div>
+</form>
+</body>
+</main>
+</html>
